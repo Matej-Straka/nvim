@@ -3,6 +3,7 @@ vim.keymap.set("n", "<leader>pv", "<cmd>NvimTreeToggle<CR>")
 
 vim.keymap.set("n", "<leader>w", "<cmd>wa<CR>")
 vim.keymap.set("n", "<leader>qw", "<cmd>wqa<CR>")
+vim.keymap.set("n", "<leader>q", "<cmd>wq<CR>")
 
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
