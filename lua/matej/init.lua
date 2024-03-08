@@ -1,3 +1,3 @@
 require("matej.remap")
-require("matej.packer")
+require("matej.plugins")
 require("matej.set")
