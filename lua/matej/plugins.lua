@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    'github/copilot.vim',
   'wbthomason/packer.nvim',
   {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
