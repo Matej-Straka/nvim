@@ -61,8 +61,15 @@ local plugins = {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons', opt = true }
     },
+    {
+  "vhyrro/luarocks.nvim",
+  priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+     config = true,
+    },
     'nvim-tree/nvim-web-devicons',
     'dstein64/vim-startuptime',
-    'nvim-tree/nvim-tree.lua'
+    'nvim-tree/nvim-tree.lua',
+    'tamago324/vim-browsersync',
+    'tyru/open-browser.vim',
 }
 require("lazy").setup(plugins, opts)
