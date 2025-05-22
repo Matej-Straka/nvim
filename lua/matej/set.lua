@@ -19,3 +19,14 @@ vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+
+-- Define a custom highlight group for yanking with light blue background
+vim.api.nvim_set_hl(0, "YankHighlight", { bg = "#ADD8E6", fg = "#000000" }) -- Light blue background, black text
+
+-- Set up autocommand to highlight on yank
+vim.api.nvim_create_autocmd("TextYankPost", {
+  callback = function()
+    vim.highlight.on_yank({ higroup = "YankHighlight", timeout = 200 })
+  end,
+})
